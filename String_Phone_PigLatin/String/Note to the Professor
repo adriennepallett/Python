@@ -1,0 +1,83 @@
+Professor -
+    The code below is from my first version. The code is fully functional,
+    however, I elected to redo it as it wasnt very efficient.
+    I have a zipped copy of the below code if you would prefer that it be my
+    submission upon request.
+    Thank you! - Adrienne
+    '''
+    
+    '''
+    # Q1 - Inputs
+    word = str(input("Enter your word: "))
+    sub_str = str(input("What letter(s) should be replaced?: "))
+    rep_str = str(input("What do you want to replace the last letter with?: "))
+    
+
+    # Q1 - Output
+
+    if -1 in index:
+        print("Your word doesnt contain the substring.")
+
+    if -1 in index2:
+        print("Your word only contains 1 instance. Nothing is changed.")
+        
+    print("Your new word is:",aTReplace(word,sub_str,rep_str))
+    print()
+    
+    # Finds
+    index = word.find(sub_str)
+
+    # If the string is not found at all
+    if(index == -1 ):
+        print("Your word doesnt contain the substring.")
+        return -1
+        
+
+    else:
+        old_str = word[ :index+len(sub_str)]
+        new_str = word[index+len(sub_str): ]
+        index2 = new_str.find(sub_str)
+
+        # If the string only contains 1 instance
+        if index2 == -1:
+            print("Your word only contains 1 instance. Nothing is changed.")
+            
+        # Start finding changeable instances
+        else:
+            old_str2 = new_str[ :index2+len(sub_str)]
+            new_str2 = new_str[index2+len(sub_str): ]
+            index3 = new_str2.find(sub_str)
+
+            # If there are 2 occurances and the string is going to be changed
+            if (index3 == -1):
+                replaceLetter = new_str.replace(sub_str,rep_str)
+                newWord = old_str+replaceLetter
+
+                return newWord
+
+            # If there are more than 2 occurances
+            else:
+                new_word = old_str + old_str2               
+                old_str3 = new_str2[ :index3+len(sub_str)]
+                new_str3 = new_str2[index3+len(sub_str): ]
+                index4 = new_str3.find(sub_str)
+
+                if (index4 == -1):
+                    new_word = old_str + old_str2
+                    replaceLetter = old_str3.replace(sub_str,rep_str)
+                    newWord = new_word + replaceLetter + new_str3
+
+                    return newWord
+                
+                # If there are more than 3 occurances
+                else:
+                    new_word = old_str + old_str2 + old_str3
+                    old_str4 = new_str3[ :index4+len(sub_str)]
+                    new_str4 = new_str3[index4+len(sub_str): ]
+                    index5 = new_str4.find(sub_str)
+
+                    if (index5 == -1):
+                        replaceLetter = old_str4.replace(sub_str,rep_str)
+                        newWord = newWord + replaceLetter
+
+                        return newWord
