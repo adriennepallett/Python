@@ -1,0 +1,35 @@
+
+My NameOne12!
+ 
+Password not accepted because of the following reasons:
+ 	-- Password should contain no spaces 
+
+MyN@meOne12!
+ 
+Password Accepted
+
+MyNameOne12%
+ 
+Password Accepted
+
+MyNameOne12$
+ 
+Password Accepted
+
+MyNameOne12!
+ 
+Password Accepted
+
+My Name One 12 $ 
+Password not accepted because of the following reasons:
+ 	-- Password should contain no spaces 
+
+ 
+Password not accepted because of the following reasons:
+ 	-- Password should be 10 characters or more 
+
+ 	-- Password should contain EXACTLY 3 upper case letters 
+
+ 	-- Password should contain EXACTLY 2 numbers 
+
+ 	-- Password should contain EXACTLY 1 spacial character: $ ! % 
