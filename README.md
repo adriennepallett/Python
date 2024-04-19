@@ -38,3 +38,5 @@ Pallett_Speeding_Fines.py ---------------------- Unstable ⛔️ See Projects
 New Speeding Fines.py -------------------------- Stable ✅
 
 speedlimitGUI_Adrienne.py ---------------------- Stable ✅
+
+Footwear --------------------------------------- Stable ✅
