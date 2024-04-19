@@ -46,3 +46,7 @@ Password --------------------------------------- Stable ✅
 Add Mod Del Proc ------------------------------- Stable ✅
 
 Movie_Loop_Rhyme ------------------------------- Stable ✅
+
+RockPaperScissor_SemiPerimeter ----------------- Stable ✅
+
+String_Phone_PigLatin -------------------------- Stable ✅
