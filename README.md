@@ -52,3 +52,5 @@ RockPaperScissor_SemiPerimeter ----------------- Stable ✅
 String_Phone_PigLatin -------------------------- Stable ✅
 
 SocialMedia.py --------------------------------- Stable ✅
+
+FinalProjectTH.py ------------------------------ Unstable ⛔️ See Projects
